@@ -10,3 +10,8 @@ With this solution you can protect your EC2 web servers hosted on AWS behind an 
 4. Set AWS IAM role with "AmazonVPCFullAccess" permission for aws cli on ELB targeted instances.
 5. Set the "rule number" to 2000 in "permit any" role on your network ACL. (All the custom and default role's "rule number" have to be over 2000)
 6. Restart the fail2ban service on the servers.
+
+# Mastermind
+
+Peto Roland
+Szuchi Daniel
