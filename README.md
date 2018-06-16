@@ -13,5 +13,4 @@ With this solution you can protect your EC2 web servers hosted on AWS behind an 
 
 # Mastermind
 
-Peto Roland
-Szuchi Daniel
+Peto Roland & Szuchi Daniel
