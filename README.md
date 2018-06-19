@@ -7,7 +7,7 @@ With this solution you can protect your EC2 web servers hosted on AWS behind an 
 1. Copy aws-vpc-acl.conf to the fail2ban action.d directory, and modify the file for your configuration. (Read the comments in conf file)
 2. Set the jail's action parameter: aws-vpc-acl
 3. Config the apache2 like this: https://aws.amazon.com/premiumsupport/knowledge-center/log-client-ip-load-balancer-apache/
-4. Set AWS IAM role with "AmazonVPCFullAccess" permission for aws cli on ELB targeted instances.
+4. Set AWS IAM role with inline policy or create new policy and attache to your role for aws cli on ELB targeted instances. Use for policy the "ModifyNetworkACLPolicy.json"
 5. Set the "rule number" to 2000 in "permit any" role on your network ACL. (All the custom and default role's "rule number" have to be over 2000)
 6. Restart the fail2ban service on the servers.
 
